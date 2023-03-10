@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    Name: Prashan Rai
+    Description: This program will perform simple arithmetic in JavaScript
+-->
+<head>
+    <title>Simple arithmetic</title>
+    <script type="text/javascript">
+        function calculate()
+    {
+    //define variables 
+        var num1;
+        var num2;
+        var addans;
+        var subans;
+        var multans;
+        var divans;
+        var modans;
+
+    //get data from user
+        num1 = promt("enter the first number:");
+        num2 = promt("enter the second number:");
+
+
+    //perform calculations
+        addans = 2 * 1 + 3 * 1;
+        subans = 3 - 4;
+        multans = 4 * 5;
+        divans = 5 / 6;
+        modans = 6 % 7;
+
+
+    //display results
+         //display results
+            document.write("<h1 style='color:7D3C98;'>Arithmetic Answers</h1>");
+            document.write("Addition of " + num1 + " and " + num2 + " equals " + addans + "<br />");
+            document.write("Subtraction of " + num1 + " and " + num2 + " equals " + subans + "<br />");
+            document.write("Multiplication of " + num1 + " and " + num2 + " equals " + multans + "<br />");
+            document.write("Division of " + num1 + " by " + num2 + " equals " + divans + "<br />");
+            document.write("Modulus of " + num1 + " and " + num2 + " equals " + modans + "<br />");
+            document.write("</h2>");
+    }
+    </script>    
+</head>
+<body>
+    <form>
+        <input type = "button" value = "click here for arithmetic calculations"
+                        class = "calcbutton" onclick = "calculate()" />
+    </form>
+</body>
+</html>
