@@ -45,7 +45,7 @@
             a{
                 text-decoration: none;
             }
-           
+            
             h3{
                 text-align: center;
             }
@@ -119,6 +119,25 @@
                 "\nSales tax:        " + dollar.format(salestaxamount) +
                 "\nTotal:            " + dollar.format(total) + howtoplay);
         }//End function pizza order
+        function suborder() {
+            const salestaxrate = 0.07;
+            const subPrices = [12.99, 10.99, 12.99, 11.99];
+            const dollar = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD',});
+
+            let subChoice = parseInt(prompt("Enter: \n 1. for Hot Italian Sub \n 2. for Ham and Cheese Sub\n 3. for Philly Cheese Steak Sub\n 4. for Smoked Turkey Sub")) - 1;
+            let numSubs = parseInt(prompt("Enter the number of subs you would like to order:"));
+
+            let subCost = numSubs * subPrices[subChoice];
+            let salesTaxAmount = subCost * salestaxrate;
+            let total = subCost + salesTaxAmount;
+
+            alert("\nGALLO's PIZZA & SUBS SHOP" +
+                "\nNumber of subs: " + numSubs +
+                "\nSub cost:       " + dollar.format(subCost) +
+                "\nSales tax:      " + dollar.format(salesTaxAmount) +
+                "\nTotal:          " + dollar.format(total));
+        }
+
         </script>
     </head>
     <body>
@@ -171,7 +190,39 @@
                             </table>
                         </td>
                     </tr>
+                    <table class="content">
+                        <tr>
+                            <td colspan="4">
+                                <h1>Gallo Pizza & Sub Shop</h1>
+                                <h2>Best pizza and subs this side of Italy!</h2>
+                                <ul>
+                                    <li>5600 Main Street</li>
+                                    <li>Call to order: 417.330.9800</li>
+                                    <li>Fast and free delivery within city limits!</li>
+                                    <li>Credit, debit, cash accepted</li>
+                                </ul>
+                                <table class="table">
+                                    <tr><td colspan = "2"><h3>Sub Sandwich prices at Gallo's are as follows:</h3></td></tr>
+                                    <tr><td colspan = "2"><img src="sub.jpeg"/></td></tr>
+                                    <tr><td>Hot italian Sub      </td>  <td>$12.99</td></tr>
+                                    <tr><td>Ham & Cheese Sub     </td>  <td>$10.99</td></tr>
+                                    <tr><td>Philly Cheese Steak      </td>  <td>$12.99</td></tr>
+                                    <tr><td>Smoked Turkey Sub      </td>  <td>$11.99</td></tr>
+                                    <tr><td>Sales Tax     </td>  <td>7%</td></tr>
+                                    <tr><td colspan="2">Gallo sub Party:
+                                     <br  />Order 10 or more subs, recive a 15% discount!</td></tr>
+                                        <tr><td colspan="2">
+                                             <form>
+                                                <input type = "button" value="Click here to order sub" 
+                                             class="button" onclick="suborder()" />
+                                    </form>
+                                    </td>
+                                        
+                                </table>
+                            </td>
+                        </tr>
                 </table>
+               
             </main>
         </div>
     </body>
