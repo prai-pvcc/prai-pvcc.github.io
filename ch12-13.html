@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chapter 8</title>
+        <style>
+      body{
+         background-color:cadetblue; 
+         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+         margin-top: 0px;
+         
+      }
+      h1,h2,h3,h4,h5,h6{
+         color: wheat;
+         height: fit-content;
+         width: fit-content;
+        
+      }
+      h1{
+         font-size: 1.5em;
+      }
+      h2{
+         font-size: 1.05em;
+      }
+      h3{
+         font-size: 0.95em;
+      }
+      h4{
+        font-size: 0.75em;
+        text-align: left;
+      }
+      ol{
+         margin-left: 0.5em;
+         color:darkblue;
+      }
+      ol li{
+        padding-top: 0.5em;
+
+      }
+      .answer, .ch2-brief, .ch3-brief{
+        color:bisque;
+        padding-right: 1em;
+      }
+      .this{
+        color:antiquewhite;
+        opacity: .5;
+      }
+      td{
+        border: 3px solid lightgray;
+      }
+      table{
+         width:800px;
+         font-size: 1.3em;
+         font-weight: bold;
+         background-color:cadetblue;
+         margin: auto;
+         
+      }
+      li .ANSWER{
+        color:cyan;
+      }
+      li{
+        color:cadetblue;
+      }
+      .ANSWER{
+        color:magenta;
+      }
+      .answer{
+        color:blueviolet;
+        
+      }
+    
+      a{
+         text-decoration: none;
+      }
+      a:link{
+         color: lightgray;
+      }
+      a:visited{
+         color:chartreuse;
+      }
+      a:hover{
+         color:darkseagreen;
+      }
+      a:active{
+         color: white;
+      }
+      .one{
+        text-align: center;
+        width: 200px;
+        height: auto;
+        color:cornflowerblue;
+        border: 1;
+      }
+      tr td{
+        color:blanchedalmond;
+        opacity: .5;
+        margin: auto;
+        height: fit-content;
+        width: fit-content;
+      }
+    
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr style="background-color:darkslateblue;">
+               <th>
+                  <a href="index.html">Home</a>
+               </th>
+               <th>
+                  <a href="https://www.pvcc.edu">PVCC</a>
+               </th>
+               <th>
+                  <a href="https://www.w3schools.com/html/">W3 Schools</a>
+               </th>
+               <th>
+                  <a href="contactus.html">Contact US</a>
+               </th>
+                </tr>
+                <tr>
+                <td colspan="4">
+                    <h2>Chapter 12: Models of Computation</h2>
+                    <h2>Chapter 13: Simulation & Modeling</h2>
+                    <h2>Prashan Rai</h2></td>
+                        <tr>
+                            <td colspan="4">
+                                <h2>Chapter 12: Models of Computation</h2>
+                                <ol>
+                                    <li class="answer">What is the purpose of a model?</li>
+                                   <dl class="ANSWER">A model, in general terms, serves as a simplified representation of a complex system, process, or phenomenon. It is an abstract or conceptual framework that helps us understand, analyze, and predict the behavior of the subject being modeled.</dl>
+                                   <li class="answer">List four phenomena of a model:</li>
+                                   <dl class="ANSWER">A.It captures the essence, the important properties of the real
+                                    thing.</dl>
+                                   <dl class="ANSWER">B.Probably differs in scale from the real thing.</dl>
+                                   <dl class="ANSWER">C.Omits some of the details of the real thing.</dl>
+                                   <dl class="ANSWER">D.Lacks the full functionality of the real thing</dl>
+                                    
+                                    <li class="answer">List four things a computing agent should be able to do:</li>
+                                    <dl class="ANSWER">A.Accept input</dl>
+                                    <dl class="ANSWER">B.Store information in memory and retrieve it from memory</dl>
+                                    <dl class="ANSWER">C.Take actions according to algorithm instructions</dl>
+                                    <dl class="ANSWER">D.Produce output</dl>
+
+                                    <li class="answer">List four characteristics of an algorithm:</li>
+                                    <dl class="ANSWER">A.Be a well-ordered collection</dl>
+                                    <dl class="ANSWER">B.Consist of unambiguous and effectively computable operations</dl>
+                                    <dl class="ANSWER">C.Halt in a finite amount of time</dl>
+                                    <dl class="ANSWER">D.Produce a result</dl>
+
+                                    <li class="answer">What is the "halting problem" with regards to an uncomputable problem?</li>
+                                    <dl class="ANSWER">The halting problem is a fundamental result in computability theory, as it demonstrates that there are problems that cannot be solved by algorithms or computation, no matter how powerful the computing machinery. </dl>
+                                </ol>
+                </td>
+                </tr>
+                <tr>
+                
+            <tr>
+               <tr>
+                <td colspan="4">
+                    <h2>Chapter 13:Simulation & Modeling</h2>
+                    Define these terms:
+                    <ol>
+                        <li class="answer">Scientific Method:</li>
+                         <dl class="this">The scientific method is a systematic process for acquiring knowledge and understanding the natural world. It involves the formulation of hypotheses, careful observation, experimentation, and analysis of data to draw conclusions and refine our understanding.</dl>
+
+                         <li class="answer">Computional model</li>
+                         <dl class="this">A computational model is a mathematical or algorithmic representation of a system, process, or phenomenon that can be simulated or analyzed using computers. </dl>
+                         
+                         <li class="answer">discrete event Simulation</li>
+                         <dl class="this">Discrete event simulation (DES) is a modeling and simulation technique used to study systems or processes where events occur at specific points in time, causing changes in the state of the system. </dl>
+
+                         <li class="answer">List and describe seven reasons to construct a simulation</li>
+                         <ol>
+                            <li class="ANSWER">Existence:The system might not yet exist, so it is not possible to experiment directly on the actual system. In fact, we might be using a model to help us with the construction of the system.</li>
+                            
+                            <li class="ANSWER">Physical realization:The system is not constructed from entities that can be represented by physical objects. For example, it may be a social system (such as welfare policies or labor practices) that can only be simulated on a computer.</li>
+
+                            <li class="ANSWER">Speed of Construction:It might take too much time to construct a physical model.</li>
+                            <li class="ANSWER">Time Scale:Some
+                                physical systems change too slowly or too quickly. For example, an
+                                elementary particle in a high-speed accelerator may decompose in 10215
+                                seconds.</li>
+                            <li class="ANSWER">Ethical Behavior:Some
+                                physical models have serious moral and ethi- cal consequences, perhaps
+                                the best known being the use of animals in medical research.</li>
+                            <li class="ANSWER">Ease of Modification:If
+                                we are not happy with the design of a physical model, we need to
+                                construct a brand-new one.</li>
+                            <li class="ANSWER">Safety:It might be too
+                                dangerous to experiment on the actual system or a physical
+                                replica.</li>
+                         </ol>
+                    </ol>
+                </td>
+               </tr>    
+              
+
+                </td>
+            </ol>
+        </td>
+       </tr>
+        <tr>
+               <tr>
+                <td colspan="4">
+                    <h2>Chapter 13:Simulation & Modeling</h2>
+                    Define these terms:
+                    <ol>
+                        <li class="answer">Scientific Method:</li>
+                         <dl class="this">The scientific method is a systematic process for acquiring knowledge and understanding the natural world. It involves the formulation of hypotheses, careful observation, experimentation, and analysis of data to draw conclusions and refine our understanding.</dl>
+
+                         <li class="answer">Computional model</li>
+                         <dl class="this">A computational model is a mathematical or algorithmic representation of a system, process, or phenomenon that can be simulated or analyzed using computers. </dl>
+                         
+                         <li class="answer">discrete event Simulation</li>
+                         <dl class="this">Discrete event simulation (DES) is a modeling and simulation technique used to study systems or processes where events occur at specific points in time, causing changes in the state of the system. </dl>
+
+                         <li class="answer">List and describe seven reasons to construct a simulation</li>
+                         <ol>
+                            <li class="ANSWER">Existence:The system might not yet exist, so it is not possible to experiment directly on the actual system. In fact, we might be using a model to help us with the construction of the system.</li>
+                            
+                            <li class="ANSWER">Physical realization:The system is not constructed from entities that can be represented by physical objects. For example, it may be a social system (such as welfare policies or labor practices) that can only be simulated on a computer.</li>
+
+                            <li class="ANSWER">Speed of Construction:It might take too much time to construct a physical model.</li>
+                            <li class="ANSWER">Time Scale:Some
+                                physical systems change too slowly or too quickly. For example, an
+                                elementary particle in a high-speed accelerator may decompose in 10215
+                                seconds.</li>
+                            <li class="ANSWER">Ethical Behavior:Some
+                                physical models have serious moral and ethi- cal consequences, perhaps
+                                the best known being the use of animals in medical research.</li>
+                            <li class="ANSWER">Ease of Modification:If
+                                we are not happy with the design of a physical model, we need to
+                                construct a brand-new one.</li>
+                            <li class="ANSWER">Safety:It might be too
+                                dangerous to experiment on the actual system or a physical
+                                replica.</li>
+                         </ol>
+                    </ol>
+                </td>
+               </tr>    
+              
+
+                </td>
+            </ol>
+        </td>
+       </tr>
+
+       <tr>
+        <tr>
+         <td colspan="4">
+             <h2>Illuestires: "the Mother of All computations":
+             <ol>
+                 <li class="answer">What is Illustris:</li>
+                  <dl class="this">The model, called Illustris, tracked the evolution of the cosmos from a few hundred thousand
+                  years after the Big Bang up to the current time, 13.8 billion years later.</dl>
+
+                  <li class="answer">What fields of science were involved in the Illustris computational model?</li>
+                  <dl class="this">Illustris uses equations drawn from physics, astronomy, hydrodynamics, chemistry, and mathematics.</dl>
+                  
+                  <li class="answer">How long did the project take?</li>
+                  <dl class="this">It took five years for the software teams in the United States, France, and Germany to design, program, and test Illustris.</dl>
+
+                  <li class="answer">>How many years of gallactic evolution are simulated in
+                    Illustris?</li>
+                    <dl class="this">14 billion years.</dl>
+
+                <li class="answer">Illustris was created using two supercomputers. What is a
+                    supercomputer?</li>
+                <dl class="this">A supercomputer is a computer with a
+                    high level of performance as compared to a general-purpose computer.</dl>
+
+                  </ol>
+             </ol>
+         </td>
+        </tr>    
+        <tr>
+            <td colspan="4" style="text-align: center;">
+                <iframe width="560" height="300" src="https://www.youtube.com/embed/NjSFR40SY58"
+                    title="Youtube Video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </td>
+        </tr>
+       
+
+         </td>
+     </ol>
+ </td>
+</tr>
+        
+        </table>
+    </body>
+</html>
