@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuition: Prashan Rai</title>
+
+    <script type="text/javascript">
+        function calculateTuitionAndFees() {
+            const dollar = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', });
+            var credits = 0;
+            var tuitionRate = 155;
+            var institutionalFee = 1.75;
+            var studentActivityFee = 2.90;
+
+            credits = document.getElementById('credits').value;
+
+            if (credits == '') {
+                alert("Please enter the number of credits.");
+                return;
+            }
+
+            var tuitionAmount = credits * tuitionRate;
+            var institutionalAmount = credits * institutionalFee;
+            var studentActivityAmount = credits * studentActivityFee;
+            var totalOwed = tuitionAmount + institutionalAmount + studentActivityAmount;
+
+            document.getElementById('tuition').value = dollar.format(tuitionAmount);
+            document.getElementById('institutional').value = dollar.format(institutionalAmount);
+            document.getElementById('studentActivity').value = dollar.format(studentActivityAmount);
+            document.getElementById('total').value = dollar.format(totalOwed);
+        }
+    </script>
+    <style>
+        body {
+            background-color: darkcyan;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        table {
+            width: 500px;
+            color: ghostwhite;
+            background-color: cadetblue;
+            border: none;
+            font-weight: bold;
+            margin: 0 auto;
+        }
+
+        td {
+            text-align: right;
+            padding: 10px;
+        }
+
+        input {
+            width: 150px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 80%;
+            border: none;
+            border-bottom: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td colspan="2">
+                    <h2>PVCC Tuition & Fees Calculator</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>Number of Credits:</td>
+                <td><input type="text" id="credits" placeholder="Enter credits" /></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="button" value="Calculate tuition and fees" class="button"
+                        onclick="calculateTuitionAndFees()" />
+                </td>
+            </tr>
+            <tr>
+                <td><input type="reset"></td>
+            </tr>
+            <tr style="font-weight: bold; font-size: 1.3m; text-align: left;">
+                <td>Tuition:</td>
+                <td><input type="text" id="tuition" placeholder="0" /></td>
+            </tr>
+            <tr style="font-weight: bold; font-size: 1.3em; text-align: left;">
+                <td>Institutional fee:</td>
+                <td><input type="text" id="institutional" placeholder="0" /></td>
+            </tr>
+            <tr style="font-weight: bold; font-size: 1.3em; text-align: left;">
+                <td>Student Activity fee:</td>
+                <td><input type="text" id="studentActivity" placeholder="0" /></td>
+            </tr>
+            <tr style="font-weight: bold; font-size: 1.3em; text-align: left;">
+                <td>Total:</td>
+                <td><input type="text" id="total" placeholder="0" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
